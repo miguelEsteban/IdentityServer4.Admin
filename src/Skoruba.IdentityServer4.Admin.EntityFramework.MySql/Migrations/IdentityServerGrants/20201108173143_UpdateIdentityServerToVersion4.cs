@@ -7,6 +7,8 @@ namespace Skoruba.IdentityServer4.Admin.EntityFramework.MySql.Migrations.Identit
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
+            return;
+
             migrationBuilder.AddColumn<DateTime>(
                 name: "ConsumedTime",
                 table: "PersistedGrants",

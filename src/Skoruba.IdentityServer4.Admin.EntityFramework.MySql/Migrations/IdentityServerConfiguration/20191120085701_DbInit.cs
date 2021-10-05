@@ -8,6 +8,7 @@ namespace Skoruba.IdentityServer4.Admin.EntityFramework.MySql.Migrations.Identit
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
+            return;
             migrationBuilder.CreateTable(
                 name: "ApiResources",
                 columns: table => new

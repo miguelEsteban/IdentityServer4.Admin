@@ -11,6 +11,8 @@ namespace Skoruba.IdentityServer4.Admin.EntityFramework.MySql.Migrations.Identit
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
+            return;
+
             migrationBuilder.DropForeignKey(
                 name: "FK_ApiClaims_ApiResources_ApiResourceId",
                 table: "ApiClaims");
