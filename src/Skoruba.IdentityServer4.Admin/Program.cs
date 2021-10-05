@@ -96,14 +96,14 @@ namespace Skoruba.IdentityServer4.Admin
                      var configurationRoot = configApp.Build();
 
                      configApp.AddJsonFile("serilog.json", optional: true, reloadOnChange: true);
-                     configApp.AddJsonFile("identitydata.json", optional: true, reloadOnChange: true);
-                     configApp.AddJsonFile("identityserverdata.json", optional: true, reloadOnChange: true);
+                     //configApp.AddJsonFile("identitydata.json", optional: true, reloadOnChange: true);
+                     //configApp.AddJsonFile("identityserverdata.json", optional: true, reloadOnChange: true);
 
                      var env = hostContext.HostingEnvironment;
 
                      configApp.AddJsonFile($"serilog.{env.EnvironmentName}.json", optional: true, reloadOnChange: true);
-                     configApp.AddJsonFile($"identitydata.{env.EnvironmentName}.json", optional: true, reloadOnChange: true);
-                     configApp.AddJsonFile($"identityserverdata.{env.EnvironmentName}.json", optional: true, reloadOnChange: true);
+                     //configApp.AddJsonFile($"identitydata.{env.EnvironmentName}.json", optional: true, reloadOnChange: true);
+                     //configApp.AddJsonFile($"identityserverdata.{env.EnvironmentName}.json", optional: true, reloadOnChange: true);
 
                      if (env.IsDevelopment())
                      {

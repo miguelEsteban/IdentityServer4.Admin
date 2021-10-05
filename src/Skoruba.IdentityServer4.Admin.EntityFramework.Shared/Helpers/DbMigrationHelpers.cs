@@ -67,20 +67,20 @@ namespace Skoruba.IdentityServer4.Admin.EntityFramework.Shared.Helpers
         {
             using (var scope = services.GetRequiredService<IServiceScopeFactory>().CreateScope())
             {
-                using (var context = scope.ServiceProvider.GetRequiredService<TPersistedGrantDbContext>())
-                {
-                    await context.Database.MigrateAsync();
-                }
+                //using (var context = scope.ServiceProvider.GetRequiredService<TPersistedGrantDbContext>())
+                //{
+                //    await context.Database.MigrateAsync();
+                //}
 
-                using (var context = scope.ServiceProvider.GetRequiredService<TIdentityDbContext>())
-                {
-                    await context.Database.MigrateAsync();
-                }
+                //using (var context = scope.ServiceProvider.GetRequiredService<TIdentityDbContext>())
+                //{
+                //    await context.Database.MigrateAsync();
+                //}
 
-                using (var context = scope.ServiceProvider.GetRequiredService<TConfigurationDbContext>())
-                {
-                    await context.Database.MigrateAsync();
-                }
+                //using (var context = scope.ServiceProvider.GetRequiredService<TConfigurationDbContext>())
+                //{
+                //    await context.Database.MigrateAsync();
+                //}
 
                 using (var context = scope.ServiceProvider.GetRequiredService<TLogDbContext>())
                 {
